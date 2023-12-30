@@ -1,0 +1,67 @@
+body {
+    background-color: #3e3e52;
+    color: #d6d6e0;
+    text-align: center;
+}
+
+.bootstrapFont {
+    font-family: Rubik, sans-serif;
+}
+
+.header {
+    background-color: #1c1c25;
+    box-shadow: 2px 2px 2px #3e3e52;
+    font-family: Spectral, serif;
+    font-size: 40pt;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+}
+
+h4 {
+    font-family: Rubik, sans-serif;
+    font-size: 22pt;
+}
+
+p {
+    font-family: Rubik, sans-serif;
+    font-size: 16pt;
+}
+
+.text {
+    margin: 1rem;
+}
+
+.c-item {
+    height: 600px;
+}
+
+.c-img {
+    height: 100%;
+    object-fit: contain;
+}
+
+.card-img {
+    height: 100%;
+    object-fit: fill;
+}
+
+.scroll-container {
+    overflow: auto;
+    padding: 8px;
+}
+
+.toTop {
+    background-color: #f0f0f0;
+    border: none;
+    bottom: 20px;
+    color: #acacac;
+    font-size: 18px;
+    position: fixed;
+    padding: 15px;
+    right: 25px;
+}
+
+.toTop:hover {
+    background-color: #a3f1a3;
+}

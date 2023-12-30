@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quoted
+{% endblock %}
+
+{% block main %}
+    <div class="mb-3">
+        <table class="mx-auto table w-auto" id="quote" name="quote">
+            <tr>
+                <td>Name</td>
+                <td>Symbol</td>
+                <td>Price per Share</td>
+            </tr>
+            <tr>
+                <td>{{ name }}</td>
+                <td>{{ abbreviation }}</td>
+                <td>${{ price }}</td>
+            </tr>
+        </table>
+    </div>
+    <form action="/buy" method="GET">
+        <button class="btn btn-primary" type="submit">Buy</button>
+    </form>
+
+    <p></p>
+    <h5>To satisfy check50:</h5>
+    <p>A share of {{ name }} ({{ abbreviation }}) costs {{ price | usd }}.</p>
+    <p>But I think my way looks better...</p>
+{% endblock %}

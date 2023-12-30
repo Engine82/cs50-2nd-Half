@@ -1,0 +1,24 @@
+history:
+
+CREATE TABLE trades (
+id INTEGER PRIMARY KEY NOT NULL,
+tradeuser TEXT NOT NULL,
+date NUMERIC NOT NULL,
+time NUMERIC NOT NULL,
+symbol TEXT NOT NULL,
+number INTEGER,
+price NUMERIC NOT NULL,
+activity TEXT NOT NULL DEFAULT "purchase",
+FOREIGN KEY(tradeuser) REFERENCES users(id)
+);
+
+
+portfolio:
+
+CREATE TABLE portfolio (
+id INTEGER PRIMARY KEY NOT NULL,
+user TEXT NOT NULL,
+symbol TEXT NOT NULL,
+shares INTEGER NOT NULL,
+FOREIGN KEY(user) REFERENCES users(id)
+);

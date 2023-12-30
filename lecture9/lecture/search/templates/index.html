@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+
+<html lang="eng">
+    <head>
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <title>Shows</title>
+    </head>
+    <body>
+
+        <input autocomplete="off" autofocus placeholder="Query" type="search">
+
+        <ul></ul>
+
+        <script>
+
+            let input = document.querySelector('input')
+            input.addEventListener('input', async function() {
+                let response = await fetch('/search?q=' + input.value);
+                let shows = await response.text();
+                document.querySelector('ul').innerHTML = shows;
+            });
+
+        </script>
+    </body>
+</html>

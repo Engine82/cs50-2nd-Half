@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Scoreboard
+        </title>
+        <style>
+
+            .centered {
+                text-align: center;
+            }
+
+            table {
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+            }
+
+            .HC {
+                background-color: #602D89;
+                color: white;
+            }
+
+            .BU {
+                background-color: #CC0000;
+            }
+        </style>
+    </head>
+    <body class="centered">
+        <h1>Holy Cross vs BU Basketball Game</h1>
+            <p>Click the buttons to add a point to each team</p>
+            <table>
+                <body>
+                    <tr>
+                        <td class="HC">
+                            Holy Cross
+                        </td>
+                        <td class="BU">
+                            BU
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="score1">0</td>
+                        <td id="score2">0</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button id="add1">
+                                +1
+                            </button>
+                        </td>
+                        <td>
+                            <button id="add2">
+                                +1
+                            </button>
+                        </td>
+                    </tr>
+                </body>
+            </table>
+        </body>
+        <script>
+            let team1score = 0;
+            let team2score = 0;
+
+            document.querySelector('#add1').onclick = function() {
+                team1score++;
+                document.querySelector('#score1').innerHTML = team1score;
+                if (team1score > 10) {
+                    alert("Holy Cross has won!")
+                };
+            }
+
+            document.querySelector('#add2').onclick = function() {
+                team2score++;
+                document.querySelector('#score2').innerHTML = team2score;
+                if (team2score > 10) {
+                    alert("Boston University has won!")
+                };
+            }
+
+
+
+        </script>
+</html>

@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Deposited
+{% endblock %}
+
+{% block main %}
+    <div class="mb-3">
+        <p class="text-center">New balance = {{ cash | usd}}</p>
+    </div>
+{% endblock %}

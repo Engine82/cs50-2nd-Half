@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>Intro to Me</title>
+    </head>
+    <body>
+
+        <!-- Navigation bar -->
+        <div class="navbar sticky-top navbar-expand-lg bg-light bootstrapFont" style="background-color: #3e3e52">
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">DJM Photography</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                          <a class="nav-link" href="travel.html">Travel</a>
+                          <a class="nav-link" href="wildlife.html">Wildlife</a>
+                          <a class="nav-link" href="map.html">Map</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="header">
+            <h1>Interactive Map</h1>
+        </div>
+        <p></p>
+        <p>Click on a location marker to view a photo from that place.</p>
+        <div class="text">
+            <div class="container">
+                <div class="scroll-container">
+                    <img src="map/USAmap.jpg" usemap="#photomap" alt="Map of the USA">
+                    <!-- Google Maps. "Topographic Map of the USA and Surrounding Countries." Accessed August 31, 2023. https://www.maps.google.com -->
+
+                    <map name="photomap">
+                      <area class="location" id="redding" coords="119,315,8" shape="circle" alt="Redding, CA" href="card_images/dock.jpg">
+                      <area class="location" id="oregon" coords="120,260,8" shape="circle" alt="Klamath Falls, OR" href="card_images/fox.jpg">
+                      <area class="location" id="redwoods" coords="85,311,8" shape="circle" alt="Redwoods National Park" href="card_images/redwoods.jpg">
+                      <area class="location" id="yellowstone" coords="389,192,8" shape="circle" alt="Yellowstone National Park" href="card_images/elk.jpg">
+                      <area class="location" id="wasatch" coords="373,320,8" shape="circle" alt="Wasatch Range, UT" href="card_images/wasatch.jpg">
+                      <area class="location" id="goblin" coords="392,413,8" shape="circle" alt="Goblin Valley State Park, UT" href="card_images/goblin.jpg">
+                      <area class="location" id="peterborough" coords="1273,236,8" shape="circle" alt="Monadnock Region, NH" href="card_images/nuthatch.jpg">
+                      <area class="location" id="maryland" coords="1182,381,8" shape="circle" alt="Blackwater NWR, Maryland" href="card_images/chickadee1.jpg">
+                      <area class="location" id="telluride" coords="445,399,8" shape="circle" alt="Telluride, CO" href="card_images/telluride.jpg">
+
+                    </map>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

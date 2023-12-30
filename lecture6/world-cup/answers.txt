@@ -1,0 +1,36 @@
+Times:
+
+10 simulations: 0m0.028s
+100 simulations: 0m0.028s
+1000 simulations: 0m0.034s
+10000 simulations: 0m0.103s
+100000 simulations: 0m0.846s
+1000000 simulations: 0m7.773s
+
+Questions:
+
+Which predictions, if any, proved incorrect as you increased the number of simulations?:
+
+I was surprised by, but upon reflection it makes sense, that at only 10 tournament simulations
+not all teams were displayed with a percentage change of winning. But upon reflection and looking
+at the code, it makes total sense - not every team will win at least one time in only 10 simulations.
+
+
+Suppose you're charged a fee for each second of compute time your program uses.
+After how many simulations would you call the predictions "good enough"?:
+
+Hot take: For the actual Men's world cup, three of the top four teams had a 3.7% or less chance of
+winning. That is, three out of four would be expected to be eliminated in the first round, but weren't.
+You can't predict the future; how often does the favored horse win the Kentucky Derby? Seemingly almost never.
+So, save your money and go with N = 10.
+
+
+First answer:
+Assuming usage fees are per second, you might as well use N = 100000 and maximize the value gotten
+for your one second of computation time, as the n = 100000 results were barely different from the
+N = 1000000 (with N = 1000000 it takes significantly longer, for minimal difference in outcomes;
+on my comparison there was only 0.1% variation in any team's chances between the N = 100000 and N=
+1000000).  However, the first place-change occurred going from 10000 to N = 1000 with a difference
+of 1.9% for Spain, so N = 1000 is too low to be used reliably, as ~2% changes are rather significant.
+The greatest difference between N = 10000 and N = 1000000 was 0.5%, which seems like a reasonable trade-
+off for a 99% decrease in costs.

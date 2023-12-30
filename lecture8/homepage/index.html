@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>Intro to Me</title>
+    </head>
+    <body>
+
+        <!-- Navigation bar -->
+        <div class="navbar sticky-top navbar-expand-lg bg-light bootstrapFont" style="background-color: #3e3e52">
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">DJM Photography</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link" href="travel.html">Travel</a>
+                            <a class="nav-link" href="wildlife.html">Wildlife</a>
+                            <a class="nav-link" href="map.html">Map</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Page title and intro -->
+        <h1 class="header">DJM Photography</h1>
+        <div class="text">
+            <h4 >Check out pictures I've taken and stuff.</h4>
+            <p>I've been places and seen things. Here, take a look at some of them.</p>
+        </div>
+
+        <!-- Image Carousel -->
+        <div class="container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active c-item">
+                        <img src="card_images/fox.jpg" class="d-block w-100 c-img" alt="photograph of a gray fox sitting in grass, looking at the camera">
+                    </div>
+                    <div class="carousel-item c-item">
+                        <img src="card_images/dock.jpg" class="d-block w-100 c-img" alt="landscape of a boat dock extending away from the camera towards a mountain, with an eerie warm light">
+                    </div>
+                    <div class="carousel-item c-item">
+                        <img src="card_images/c.jpg" class="d-block w-100 c-img" alt="portrait of young woman wearing a light blue shirt standing on a sandy bank with a wall of red-rock with vertical grooves above">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+    </body>
+
+
+</html>

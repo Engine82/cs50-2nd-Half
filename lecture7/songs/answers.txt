@@ -1,0 +1,9 @@
+1. This person's 'audio aura' is of songs that are rather danceable, of above average energy, and moderate valence. I hypothesize this may
+correspond to a 'Purple' audio aura because the high dancaeability and above average energy would serve well to energize a person.
+
+2. The previous calculation fails to account for variation in emotional charactaristics of songs of which are key factors in determining 'audio aura.'
+The calculation provided assesses danceability, but one can dance slowly to a low energy song (think slow romantic songs).  Additionally, angry/agressive
+songs can appear similarly to upbeat happy songs that are higher in energy in the provided formula; an angry agressive song can be similar in energy and
+tempo to a happy song for example.  A better sense of 'Audio Aura' should look at averages of all categories, including key (to differentiate between happy
+upbeat vs low and dark), and tempo.  Additionally, a specific comparison between tempo, valence and energy would help determine a song's overall emotional
+orientation, which is a key factor in audio aura.
